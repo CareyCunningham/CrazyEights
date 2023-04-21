@@ -12,13 +12,18 @@ import java.util.Scanner;
 public class Players {
 
     private ArrayList<Player> players = new ArrayList<Player>();    // holds the player info
-    private int playerCount;                                  // holds a count of the players playing
+    private int playerCount;                                        // holds a count of the players playing
     private final int MAX_NAME_LENGTH = 20;                         // define the max length for a player name
 
     // constructor method to call the other private methods to define the players
     public Players() {
         setPlayerCount();
         setPlayerNames();
+    }
+    
+    // used to make JUnit testing the validation method possible
+    public Players(String name){
+        // throw away input - just to be able to instantiate the class without using Scanner
     }
 
     // getters
@@ -74,7 +79,7 @@ public class Players {
 
     // validate the names (not blank and max length defined in the constant in this class header)
     public boolean validatePlayerName(String playerName) {
-        if (!playerName.matches("^$") && playerName.length() < MAX_NAME_LENGTH) {
+        if (!playerName.matches("^$") && playerName.length() <= MAX_NAME_LENGTH) {
             return true;
         } else {
             System.out.print("Invalid input: ");
