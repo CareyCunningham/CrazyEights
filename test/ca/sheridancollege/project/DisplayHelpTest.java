@@ -11,6 +11,9 @@ import static org.junit.Assert.*;
 
 public class DisplayHelpTest {
 
+    /**
+     * Tests of helpMessage method, of class DisplayHelp.
+     */
     @Test
     public void testHelpMessageGood() {
         System.out.println("helpMessage - GOOD");
@@ -18,7 +21,6 @@ public class DisplayHelpTest {
         String result = DisplayHelp.AUTHORS.helpMessage();
         assertEquals(expResult, result);
     }
-
     @Test
     public void testHelpMessageBad() {
         System.out.println("helpMessage - BAD");
@@ -26,7 +28,6 @@ public class DisplayHelpTest {
         String result = DisplayHelp.VERSION.helpMessage();
         assertNotEquals(expResult, result);
     }
-
     @Test
     public void testHelpMessageBoundary() { // first enum
         System.out.println("helpMessage - BOUNDARY");

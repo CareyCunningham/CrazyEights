@@ -1,16 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
+/* PlayersTest.java
+ * class:   SYST17796 - Final Project - Crazy Eights
+ * name:    Carey Cunningham & Bruno Silva
+ * date:    2023-04-21
+ * purpose: JUnit testing some of the methods
  */
 package ca.sheridancollege.project;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author cunni
- */
 public class PlayersTest {
     
     /**

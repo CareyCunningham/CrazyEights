@@ -13,6 +13,9 @@ import static org.junit.Assert.*;
 
 public class CrazyEightsTest {
 
+    /**
+     * Tests of validateChangeSuit method, of class CrazyEights.
+     */
     @Test
     public void testValidateChangeSuitGood() {
         System.out.println("validateChangeSuit - Good");
@@ -21,7 +24,6 @@ public class CrazyEightsTest {
         boolean result = CrazyEights.validateChangeSuit(newSuit);
         assertEquals(expResult, result);
     }
-
     @Test
     public void testValidateChangeSuitBad() {
         System.out.println("validateChangeSuit - Bad");
@@ -30,7 +32,6 @@ public class CrazyEightsTest {
         boolean result = CrazyEights.validateChangeSuit(newSuit);
         assertEquals(expResult, result);
     }
-
     @Test
     public void testValidateChangeSuitBoundary() { // chose the last suit option
         System.out.println("validateChangeSuit - Boundary");
@@ -40,6 +41,9 @@ public class CrazyEightsTest {
         assertEquals(expResult, result);
     }
 
+    /**
+     * Tests of findCard method, of class CrazyEights.
+     */
     @Test
     public void testFindCardGood() {
         System.out.println("findCard - Good");
@@ -49,7 +53,6 @@ public class CrazyEightsTest {
         int result = CrazyEights.findCard(cardToFind, cardList);
         assertEquals(expResult, result);
     }
-
     @Test
     public void testFindCardBad() {
         System.out.println("findCard - Bad");
@@ -59,7 +62,6 @@ public class CrazyEightsTest {
         int result = CrazyEights.findCard(cardToFind, cardList);
         assertEquals(expResult, result);
     }
-
     @Test // end of list check
     public void testFindCardBoundary() {
         System.out.println("findCard - Boundary");
